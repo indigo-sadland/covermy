@@ -30,6 +30,7 @@ func Run(command []string) []string {
 	go func() {
 		for scanner.Scan() {
 			line := scanner.Text()
+			fmt.Println(line)
 			rawlines = append(rawlines, line)
 		}
 	}()
