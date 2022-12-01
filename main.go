@@ -1,10 +1,10 @@
 package main
 
 import (
-	"covermy/api"
-	"covermy/cmd"
-	"covermy/utils/extract"
-	"covermy/utils/logcamp"
+	"github.com/indigo-sadland/covermy/api"
+	"github.com/indigo-sadland/covermy/cmd"
+	"github.com/indigo-sadland/covermy/utils/extract"
+	"github.com/indigo-sadland/covermy/utils/logcamp"
 	"fmt"
 	"github.com/fatih/color"
 	"github.com/jpillora/go-tld"
