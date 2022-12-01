@@ -2,8 +2,8 @@ package api
 
 import (
 	"bytes"
-	"covermy/utils/errors"
-	"covermy/utils/logcamp"
+	"github.com/indigo-sadland/covermy/utils/errors"
+	"github.com/indigo-sadland/covermy/utils/logcamp"
 	"encoding/json"
 	"fmt"
 	"io"
