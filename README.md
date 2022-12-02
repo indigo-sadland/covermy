@@ -4,7 +4,7 @@
  <p align="center"><em>Helper to store commands and its' output!</em></p>
 
 ## Overview
-`covermy` is a simple tool dedicated to help you stay organised. It relays on [Joplin](https://github.com/laurent22/joplin) - open source note-taking app, and uses Joplin API to create hierarchical notes and store bash commands along with its' output.
+`covermy` is a simple tool dedicated to help you stay organised. It relays on [Joplin](https://github.com/laurent22/joplin) - open source note-taking app, and uses Joplin API to create hierarchical notes to store bash commands along with its' output.
 
 ## Goal
 I've made this tool with the intention to automate my bug bounty/pentest routine. I also hope that `covermy` will help not only me and not only bug bounty hunters or pentesters.
