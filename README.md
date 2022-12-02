@@ -22,5 +22,11 @@ After installing Joplin you need to obtain API key. To do this, start Joplin and
 ## Usage
 Simply add `covermy` before desired command.
 
+### Demo
+
+![covermy](https://user-images.githubusercontent.com/37074372/205365950-b72ebdf9-1cd9-45f7-b190-658a9ab6d540.gif)
+
+
+
 
  
