@@ -2,7 +2,7 @@
 package normalizer
 
 import (
-	"covermy/utils/logcamp"
+	"github.com/indigo-sadland/covermy/utils/logcamp"
 	"strings"
 )
 
