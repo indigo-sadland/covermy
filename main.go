@@ -40,6 +40,8 @@ func main() {
 	if targetType == "domain" {
 		root, _ := tld.Parse("http://" + target)
 		rootNotebook = root.Domain
+	} else if targetType == "ip" {
+		rootNotebook = target
 	} else {
 		if targetType == "file" {
 			fmt.Printf("It seems like you use a file as target input. You need to specify target name manualy" +
