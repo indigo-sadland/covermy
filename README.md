@@ -1,7 +1,7 @@
 <p align="center">
   <img width="400" alt="covermy"  src="https://github.com/indigo-sadland/covermy/blob/main/assets/logo.png?raw=true">
  </p>
- <p align="center"><em>Helper in storing commands and its' output!</em></p>
+ <p align="center"><em>Helper to store commands and its' output!</em></p>
 
 ## Overview
 `covermy` is a simple tool dedicated to help you stay organised. It relays on [Joplin](https://github.com/laurent22/joplin) - open source note-taking app, and uses Joplin API to create hierarchical notes and store bash commands along whith its' output.
