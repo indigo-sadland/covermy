@@ -11,7 +11,7 @@ I've made this tool with the intention to automate my bug bounty/pentest routine
 
 ## Instalation
 ### Requirements
-* Go 1.18+
+* Go 1.19+
   ```
   go install github.com/indigo-sadland/covermy@latest
   ```
