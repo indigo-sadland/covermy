@@ -43,8 +43,14 @@ func main() {
 		if targetType == "file" {
 			fmt.Printf("It seems like you use a file as target input. You need to specify target name manualy" +
 				" (it will be used as a name for new note).\n")
-			fmt.Printf("Target name (without spaces):")
-			fmt.Scanln(&target)
+			fmt.Printf("Target name:")
+			
+			// Parse user input
+			scanner := bufio.NewScanner(os.Stdin)
+			if scanner.Scan() {
+				target = scanner.Text()
+			}
+
 		}
 		fmt.Printf("Unable to detect root notebook. Where do you want to store the command result?\n")
 		notebooks, err := api.ListNotebooks()
