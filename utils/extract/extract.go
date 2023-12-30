@@ -19,8 +19,8 @@ func Target(CmdInput string) (string, string) {
 	}
 
 	// Check if target is an IP address
-	if regexp.MustCompile(`((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(.|$)){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?){1}`).MatchString(CmdInput) {
-		return regexp.MustCompile(`((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(.|$)){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?){1}`).FindString(CmdInput), "ip"
+	if regexp.MustCompile(`((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.|$)){4}`).MatchString(CmdInput) {
+		return regexp.MustCompile(`((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.|$)){4}`).FindString(CmdInput), "ip"
 	}
 
 	// Extract domain name
