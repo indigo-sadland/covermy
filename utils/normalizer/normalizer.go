@@ -2,7 +2,8 @@
 package normalizer
 
 import (
-	"github.com/indigo-sadland/covermy/utils/logcamp"
+	"fmt"
+	"regexp"
 	"strings"
 )
 
@@ -22,11 +23,11 @@ func Start(tool string, rawlines []string) []string {
 	case "ffuf":
 		normilized = ffuf(rawlines)
 	case "gobuster":
-		normilized = gobuster(rawlines)	
+		normilized = gobuster(rawlines)
 	case "rustscan":
 		normilized = rustscan(rawlines)
 	case "nuclei":
-		normilized = nuclei(rawlines)	
+		normilized = nuclei(rawlines)
 	default:
 		fmt.Printf("No normalization rules for the %s found.\n "+
 			"Feel free to leave a request!", tool)
@@ -63,7 +64,6 @@ func gobuster(rawlines []string) []string {
 	return lines
 }
 
-
 func rustscan(rawlines []string) []string {
 	var lines []string
 
@@ -97,4 +97,3 @@ func nuclei(rawlines []string) []string {
 
 	return lines
 }
-

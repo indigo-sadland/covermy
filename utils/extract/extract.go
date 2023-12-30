@@ -1,7 +1,6 @@
 package extract
 
 import (
-	"net/url"
 	"regexp"
 	"strings"
 )

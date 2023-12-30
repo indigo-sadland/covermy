@@ -1,12 +1,13 @@
 package main
 
 import (
+	"bufio"
+	"fmt"
+	"github.com/fatih/color"
 	"github.com/indigo-sadland/covermy/api"
 	"github.com/indigo-sadland/covermy/cmd"
 	"github.com/indigo-sadland/covermy/utils/extract"
 	"github.com/indigo-sadland/covermy/utils/logcamp"
-	"fmt"
-	"github.com/fatih/color"
 	"github.com/jpillora/go-tld"
 	"os"
 	"strings"
@@ -18,7 +19,7 @@ covermy [DESIRED TOOL COMMAND]
 
 func main() {
 	// Show usage text.
-	if len(os.Args) == 0 {
+	if len(os.Args) == 1 {
 		fmt.Println(Usage, os.Args[0])
 		os.Exit(-1)
 	}
@@ -44,7 +45,7 @@ func main() {
 			fmt.Printf("It seems like you use a file as target input. You need to specify target name manualy" +
 				" (it will be used as a name for new note).\n")
 			fmt.Printf("Target name:")
-			
+
 			// Parse user input
 			scanner := bufio.NewScanner(os.Stdin)
 			if scanner.Scan() {
