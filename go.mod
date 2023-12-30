@@ -1,4 +1,4 @@
-module covermy
+module github.com/indigo-sadland/covermy
 
 go 1.19
 
