@@ -3,8 +3,8 @@ package cmd
 import (
 	"bufio"
 	"bytes"
-	"covermy/utils/logcamp"
-	"covermy/utils/normalizer"
+	"github.com/indigo-sadland/covermy/utils/logcamp"
+	"github.com/indigo-sadland/covermy/utils/normalizer"
 	"fmt"
 	"os/exec"
 	"strings"
