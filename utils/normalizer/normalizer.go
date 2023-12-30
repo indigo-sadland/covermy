@@ -19,7 +19,7 @@ func Start(tool string, rawlines []string) []string {
 	case "ffuf":
 		normilized = ffuf(rawlines)
 	default:
-		logcamp.InfoLogger.Printf("No normalization rules for the %s found.\n "+
+		fmt.Printf("No normalization rules for the %s found.\n "+
 			"Feel free to leave a request!", tool)
 		return rawlines
 	}
